@@ -1,0 +1,16 @@
+
+{% extends 'index.html' %}
+{% load static %}
+
+{%block title%} secondimg page django{% endblock %}
+{% block content %}<h1>Django secondImg page!</h1>
+<div class ="container_fluid">
+    <div class ="row">
+       
+        <div class ="col-md-12">
+            <img src="{% static 'python.png' %}" class="img-fluid" alt="...">
+        </div>
+        
+    </div>
+</div>
+{% endblock %}

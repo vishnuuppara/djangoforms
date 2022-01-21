@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+{%block title%} third page django{% endblock %}
+{% block content %}<h1>Django third page!</h1>
+<h2> {{var}}</h2>
+
+<h4> {{msg}}</h4>
+<ul>{% for eachfruit in myfruits%}
+    <li>{{eachfruit}}</li>
+     {% endfor %}
+</ul>
+{% endblock %}

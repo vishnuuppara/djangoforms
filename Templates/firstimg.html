@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+{% load static %}
+{%block title%} IMG page django{% endblock %}
+{% block content %}<h1>Django Img page!</h1>
+<div class ="container_fluid">
+    <div class ="row">
+        {%if var%}
+        <div class ="col-md-12">
+            <img src="{% static 'python.png' %}" class="img-fluid" alt="...abc">
+        </div>
+        {%else%}
+        <div class ="col-md-12">
+            <img src="{% static 'django' %}" class="img-fluid" alt="...">
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
